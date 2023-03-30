@@ -722,6 +722,10 @@ video {
   height: 20rem;
 }
 
+.h-\[34rem\] {
+  height: 34rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1239,34 +1243,30 @@ body {
   overflow: hidden;
 }
 
-.headerMobileNav.active{
-  max-height: 500px;
+.headerMobileNav.active {
   display: block;
-}
-
-.image{
-  display: flex;
-  height: 34rem;
-  gap: 1rem;
+  max-height: 500px;
 }
 
 .image > div {
-  flex: 1;
-  border-radius: 1rem;
+  flex: 1 1 0%;
+  border-radius: 0.5rem;
   transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 }
 
 .image > div:hover {
   flex: 4;
-  color: white;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.image > div:hover p{
+.image > div:hover p {
   display: block;
 }
 
-.image > div:hover .name{
-  transform: rotate(0);
+.image > div:hover .name {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .image > div:hover .name3{
@@ -1277,7 +1277,7 @@ body {
   box-shadow: 1px 2px 10px 1px gray;
 }
 
-.meet > div:hover h2{
+.meet > div:hover h2 {
   display: block;
 }
 
@@ -1422,6 +1422,10 @@ body {
 @media (min-width: 1024px) {
   .lg\:order-first {
     order: -9999;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

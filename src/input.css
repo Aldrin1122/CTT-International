@@ -47,34 +47,24 @@ body {
 }
 
 .headerMobileNav.active{
-    max-height: 500px;
-    display: block;
+  @apply max-h-[500px] block
 
-}
-
-.image{
-    display: flex;
-    height: 34rem;
-    gap: 1rem;
-  }
-  
+} 
   .image > div {
-    flex: 1;
-    border-radius: 1rem;
+    @apply flex-1 rounded-lg;
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
   }
   
   .image > div:hover {
-    flex: 4;
-    color: white;
+    @apply flex-[4] text-white
   }
 
   .image > div:hover p{
-    display: block;
+    @apply block
   }
 
   .image > div:hover .name{
-    transform: rotate(0);
+    @apply rotate-0
     
   }
   .image > div:hover .name3{
@@ -86,7 +76,7 @@ body {
   }
 
   .meet > div:hover h2{
-    display: block;
+    @apply block
     
   }
 
