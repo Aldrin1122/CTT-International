@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#51E9EF",
-        secondary: "#252b42",
+        secondary: "#39B0A8",
         lightgray: "#fafafa",
         darkgray: '#5C5B5B',
       },
@@ -15,7 +15,8 @@ module.exports = {
       },
       fontSize: {
         huge: 'clamp(3rem, 6vw, 5rem)',
-        huge2: 'clamp(2rem, 4vw, 3rem)'
+        huge2: 'clamp(2rem, 4vw, 3rem)',
+        huge3: 'clamp(2rem, 4vw, 70px)'
 
       }
     },
