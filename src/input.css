@@ -83,4 +83,16 @@ body {
 .header nav ul li a.active{
   @apply border-b-4 border-primary text-black
 }
- 
+
+
+.theFigure .item:nth-child(1){
+  @apply absolute  left-[50%] -bottom-[8px] md:-bottom-[12px] -translate-x-[120%] -translate-y-0
+}
+
+.theFigure .item:nth-child(2){
+  @apply absolute  left-[50%] bottom-0 -translate-x-[45%] -translate-y-0
+}
+
+.theFigure .item:nth-child(3){
+  @apply absolute  left-[50%] -bottom-[11px] md:-bottom-[16px] translate-x-[35%] md:translate-x-[38%] -translate-y-0
+}
