@@ -48,33 +48,26 @@ body {
 
 .headerMobileNav.active{
   @apply max-h-[500px] block
-
 } 
   .image > div {
     @apply flex-1 rounded-lg;
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
   }
-  
   .image > div:hover {
     @apply flex-[4] text-white
   }
-
   .image > div:hover p{
     @apply block
   }
-
   .image > div:hover .name{
     @apply rotate-0
-    
   }
   .image > div:hover .name3{
     margin-top: 1rem;
   }
-
   .Ourteam_card {
-    box-shadow: 1px 2px 10px 1px gray;
+    box-shadow: 1px 1px 10px 1px gray;
   }
-
   .meet > div:hover h2{
     @apply block
     
@@ -95,4 +88,28 @@ body {
 
 .theFigure .item:nth-child(3){
   @apply absolute  left-[50%] -bottom-[11px] md:-bottom-[16px] translate-x-[35%] md:translate-x-[38%] -translate-y-0
+}
+
+.portraitItem-name .theName{
+  transform: rotate(-90deg);
+  margin-top: 10rem;
+  width: 15rem;
+  @apply mx-auto
+}
+
+.portraitItem{
+  box-shadow: 1px 1px 10px 1px gray;
+}
+
+.portraitItem.active .portraitItem-name .desc{
+  @apply block
+}
+
+.portraitItem.active{
+  @apply w-full transition-all duration-700
+}
+
+.portraitItem.active .portraitItem-name .theName{
+  transform: rotate(0);
+  margin-top: 0rem;
 }

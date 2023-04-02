@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29001ed82d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="meetTheTeam bg-lightgray py-10">
+            <div class="container">
+                <div class="wrapper flex justify-between gap-5">
+                    <div class="portraitItem h-[600px] min-w-[217px] rounded-xl p-5 bg-white group hover:bg-secondary transition-all duration-700 cursor-pointer active">
+                        <img class="w-[150px] mx-auto" src="./img/Screenshot 2023-03-30 080302.png" alt="">
+                        <div class="portraitItem-name text-center">
+                            <div class="theName">
+                                <h2 class="font-bold">Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="desc text-justify my-[5rem] hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi adipisci labore sed. Placeat error officia odit eos! Facilis, maiores ipsum aut natus modi dignissimos delectus eveniet quae ipsam provident excepturi.</p>
+                        </div>
+                    </div>
+                    <div class="portraitItem h-[600px] min-w-[217px] rounded-xl p-5 bg-white group hover:bg-secondary transition-all duration-700 cursor-pointer">
+                        <img class="w-[150px] mx-auto" src="./img/Screenshot 2023-03-30 080302.png" alt="">
+                        <div class="portraitItem-name text-center">
+                            <div class="theName ">
+                                <h2 class="font-bold">Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="desc text-justify my-[5rem] hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi adipisci labore sed. Placeat error officia odit eos! Facilis, maiores ipsum aut natus modi dignissimos delectus eveniet quae ipsam provident excepturi.</p>
+                        </div>
+                    </div>
+                    <div class="portraitItem h-[600px] min-w-[217px] rounded-xl p-5 bg-white group hover:bg-secondary transition-all duration-700 cursor-pointer">
+                        <img class="w-[150px] mx-auto" src="./img/Screenshot 2023-03-30 080302.png" alt="">
+                        <div class="portraitItem-name text-center">
+                            <div class="theName">
+                                <h2 class="font-bold">Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="desc text-justify my-[5rem] hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi adipisci labore sed. Placeat error officia odit eos! Facilis, maiores ipsum aut natus modi dignissimos delectus eveniet quae ipsam provident excepturi.</p>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const portraitItem = document.querySelectorAll('.portraitItem');
+
+        portraitItem.forEach((item) =>{
+            item.addEventListener("click", ()=>{
+                removeActiveItem()
+                item.classList.add('active');
+                
+            });
+        });
+
+        function removeActiveItem() {
+            portraitItem.forEach((items) => {
+                items.classList.remove("active");
+            });
+        }
+    </script>
+</body>
+</html>
